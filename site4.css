@@ -1,0 +1,169 @@
+header {
+    margin-bottom: 30px;
+}
+
+.contenu {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 90vh;
+    border: 6px rgb(0, 0, 0);
+    border-style: solid;
+}
+
+article {
+    border: solid rgb(0, 0, 0) 5px;
+}
+
+.facebook {
+    display: grid;
+    grid-template-columns: 1/2;
+}
+
+.flex {
+    display: flex
+}
+
+.jccenter {
+    justify-content: center;
+}
+
+.alignitems {
+    align-items: center;
+}
+
+.jaune {
+    border: solid 2px black;
+    color: rgb(237, 240, 56);
+    background: rgb(212, 231, 36);
+    background: linear-gradient(0deg, rgb(145, 131, 9) 0%, rgb(231, 217, 23) 100%);
+    animation-name: snap;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.jaune:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(231, 247, 11);
+    animation: none;
+}
+
+.bleu {
+    border: solid 2px black;
+    color: cornflowerblue;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 28%, rgba(29, 205, 253, 1) 100%, rgba(252, 176, 69, 1) 100%);
+    animation-name: fb;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.bleu:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 39, 99);
+    animation: none;
+}
+
+.rose {
+    border: solid 2px black;
+    color: rgb(218, 136, 152);
+    background: rgb(246, 30, 30);
+    background: radial-gradient(circle, rgba(246, 30, 30, 1) 4%, rgba(255, 106, 170, 1) 65%);
+    animation-name: insta;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.rose:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(236, 2, 80);
+    animation: none;
+}
+
+.bleux {
+    border: solid 2px black;
+    color: rgb(82, 195, 230);
+    background: rgb(51, 255, 249);
+    background: linear-gradient(90deg, rgba(51, 255, 249, 1) 28%, rgba(9, 9, 121, 1) 35%, rgba(22, 87, 162, 1) 43%, rgba(0, 212, 255, 1) 69%);
+    animation-name: twitter;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.bleux:hover {
+    color: white;
+    background: rgb(12, 164, 224);
+    animation: none;
+}
+
+i {
+    border: 1px solid black;
+    font-weight: bolder;
+    font-size: 67px;
+    border-radius: 56px 3px 56px 3px;
+    -webkit-border-radius: 56px 3px 56px 3px;
+    -moz-border-radius: 56px 3px 56px 3px;
+    -ms-border-radius: 56px 3px 56px 3px;
+    -o-border-radius: 56px 3px 56px 3px;
+}
+
+@keyframes twitter {
+    0% {
+        color: rgb(1, 31, 114);
+    }
+    25% {
+        color: rgb(84, 198, 252);
+    }
+    50% {
+        color: rgb(47, 133, 145);
+    }
+    100% {
+        color: rgb(1, 31, 114);
+    }
+}
+
+@keyframes insta {
+    0% {
+        color: rgb(247, 55, 205);
+    }
+    25% {
+        color: rgb(252, 7, 68);
+    }
+    50% {
+        color: rgb(248, 161, 0);
+    }
+    100% {
+        color: rgb(247, 55, 205);
+    }
+}
+
+@keyframes fb {
+    0% {
+        color: rgb(28, 236, 202);
+    }
+    25% {
+        color: rgb(77, 78, 165);
+    }
+    50% {
+        color: rgb(32, 202, 109);
+    }
+    100% {
+        color: rgb(28, 236, 202);
+        ;
+    }
+}
+
+@keyframes snap {
+    0% {
+        color: rgb(255, 251, 42);
+    }
+    25% {
+        color: rgb(95, 211, 0);
+    }
+    50% {
+        color: rgb(2, 87, 21);
+    }
+    100% {
+        color: rgb(255, 251, 42);
+    }
+}
